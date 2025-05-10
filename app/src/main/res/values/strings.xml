@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Furniture</string>
+
     <string name="s_GetStart">Get Start</string>
+
+    <string name="m_Search">Search</string>
 </resources>
