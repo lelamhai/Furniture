@@ -8,13 +8,13 @@
     android:layout_marginLeft="15dp"
     android:layout_marginRight="15dp"
     android:layout_marginBottom="15dp"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            tools:ignore="UselessParent">
-
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
                 <EditText
                     android:id="@+id/editSearch"
                     android:layout_width="match_parent"
@@ -26,7 +26,6 @@
                     tools:ignore="Autofill,RtlSymmetry,TextFields" />
 
                 <ImageView
-                    android:id="@+id/imageView2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="13dp"
@@ -35,6 +34,64 @@
                     tools:ignore="ContentDescription" />
         </RelativeLayout>
 
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="15dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                        <Button
+                            android:id="@+id/button10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="All" />
+
+                        <Button
+                            android:id="@+id/button11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Button" />
+
+
+                        <Button
+                            android:id="@+id/button13"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Button" />
+
+                        <Button
+                            android:id="@+id/button14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Button" />
+
+                        <Button
+                            android:id="@+id/button15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Button" />
+                </LinearLayout>
+        </HorizontalScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+
+                <GridView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/gridView"
+                    android:numColumns="2"/>
+        </ScrollView>
 
 
 </LinearLayout>
